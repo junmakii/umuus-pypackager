@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"></head>
+  <body>
+    {% include "umuus-bootstrap-template/navbar.html" %}
+    <div class="container-fluid">
+      <div id="app"></div>
+      {% block content %}{% endblock %}
+      {% include "umuus-bootstrap-template/footer.html" %}
+    </div>
+    <script src="BUNDLE.js"></script>
+  </body>
+</html>
